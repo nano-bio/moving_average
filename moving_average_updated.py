@@ -12,13 +12,13 @@ from scipy import signal
 import tkinter as tk
 
 
-
-SourcePath = r'\\bigshare\nanobio\Temp\JanM'
+# add the sourcepath to your datafile and optionally select a savepath where you want it to be saved to. by default, the processed data is saved in the same directory the initial data was taken from.
+SourcePath = r''
 SavePath = SourcePath
 os.chdir(SourcePath)
 
-# import data
-filename = "1000_2021_03_08_Na_Napth_H2_b__H2_n_Napth__H__Na_.txt"
+# insert the name of the specific data file (for example 'data.tex'
+filename = ""
 
 # if you get the Error 'list index out of range', check if the txt file has the correct delimiter (for example d='\t' for spaces or d=',' for commas)
 d = '\t'
